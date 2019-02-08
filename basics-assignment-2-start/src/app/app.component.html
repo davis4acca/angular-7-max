@@ -14,5 +14,9 @@
     Upon clicking the button, the username should be reset to an empty string
   </li>
 </ol>
+<input [(ngModel)]="inputField" (onChange)="onInputFieldChangedHandler()" />
 
-<input type="text" [(ngModule)]="username" />
+<h1>{{ inputField }}</h1>
+
+<button [disabled]="inputField.length === 0">CLICK</button>
+
