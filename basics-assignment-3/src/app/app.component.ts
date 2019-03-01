@@ -20,7 +20,7 @@ export class AppComponent {
 
   togglePassword() {
     this.isPasswordVisible = !this.isPasswordVisible;
-    this.buttonClickLogList.push(idGen.next().value);
+    this.buttonClickLogList.push(new Date());
 
     console.log(this.buttonClickLogList);
   }

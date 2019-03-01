@@ -21,7 +21,9 @@
       <ul>
         <p *ngIf="isPasswordVisible"> SECRET PASSWORD = TUNA</p>
 
-        <li [ngStyle]="{'color': log > 5 ? 'red' : 'blue'}" *ngFor="let log of buttonClickLogList">
+        <li [ngStyle]="{'color': i > 5 ? 'red' : 'blue'}" *ngFor="let log of buttonClickLogList; let i = index">
+        
+
           Button Click {{log}}
         </li>
       </ul>
